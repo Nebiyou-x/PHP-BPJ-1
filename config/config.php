@@ -2,7 +2,7 @@
 
 
 //HOST
-host("HOST", "localhost");
+define("HOST", "localhost");
 
 //DBNAME
 define("DBNAME", "pay");
@@ -13,7 +13,7 @@ define("USER", "root");
 //PASSWORD
 define("PASS", "");
 
-$conn = new POD("mysql:host=".HOST.";dbname=".DBNAME.";",USER,PASS);
+$conn = new PDO("mysql:host=".HOST.";dbname=".DBNAME.";",USER,PASS);
 
 if($conn == true){
     echo "connection is Success ";
