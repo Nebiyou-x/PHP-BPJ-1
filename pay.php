@@ -1,3 +1,18 @@
+<?php require  "config/config.php" ?>
+<?php
+if(isset($_GET['id'])){
+
+    $id = $_GET['id'];
+
+    $product = $conn->query("SELECT * FROM products WHERE id='$id' ");
+    $product->execute();
+
+    $singlep = $product->fetch(PDO::FETCH_OBJ);
+}
+
+
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -36,7 +51,7 @@
                             return actions.order.create({
                             purchase_units: [{
                                 amount: {
-                                value: '100' // Can also reference a variable or function
+                                value: '<?php echo $singlep->price; ?>' // Can also reference a variable or function
                                 }
                             }]
                             });
