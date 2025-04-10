@@ -44,7 +44,7 @@ $allp = $products->fetchAll(PDO::FETCH_OBJ);
                         <h5 class="d-inline"><b><?php echo $product->title; ?></b> </h5>
                         <h5 class="d-inline"><div class="text-muted d-inline"><?php echo $product->price; ?>$</div></h5>
                         <p><?php echo $product->description; ?> </p>
-                         <a href="#"  class="btn btn-primary w-100 rounded my-2"> Pay Now <i class="fas fa-arrow-right"></i> </a>      
+                         <a href="pay.php"  class="btn btn-primary w-100 rounded my-2"> Pay Now <i class="fas fa-arrow-right"></i> </a>      
      
                     </div>
                 </div>
