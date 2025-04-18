@@ -17,4 +17,4 @@ This repository contains a simple PHP project aimed at beginners, featuring basi
    git clone https://github.com/Nebiyou-x/PHP-BPJ-1.git
 
    Configure PayPal API:
-Update the PayPal API credentials in the configuration files located in the config/ directory, with your own client id from http://developer.paypal.com/
+Update the PayPal API credentials in the configuration files located in the config/ directory, with your own client id from http://developer.paypal.com/ 
