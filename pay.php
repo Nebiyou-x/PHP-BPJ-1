@@ -41,7 +41,7 @@ if(isset($_GET['id'])){
 
     <div class="container">  
                     <!-- Replace "test" with your own sandbox Business account app client ID -->
-                    <script src="https://www.paypal.com/sdk/js?client-id=ATxpkJxtSmCPGfSSIhSQAee4wYlclDpZ5-nRaMj6PWPWs-y41ZRC7mtwjCoERvnoJp135SK8nihyn4uj&currency=USD"></script>
+                    <script src="https://www.paypal.com/sdk/js?client-id=""&currency=USD"></script>
                     <!-- Set up a container element for the button -->
                     <div id="paypal-button-container"></div>
                     <script>
